@@ -219,6 +219,7 @@ $this->need('header.php');?>
                             <!--  $this->content('Continue Reading...');  -->
                             <?php $this->excerpt(80, '...'); ?>
                             &nbsp;&nbsp;&nbsp;
+							<!--
                             <span>
                                 <a href="<?php $this->permalink(); ?>" target="_self">
                                     <?php if($this->options->langis == '0'): ?>
@@ -228,7 +229,19 @@ $this->need('header.php');?>
                                     <?php endif; ?>
                                 </a>
                             </span>
+							-->
                         </div>
+						
+						<!-- Material Ripple style Continue Reading -->
+						<div class="mdl-card__actions mdl-card--border">
+							<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="<?php $this->permalink(); ?>" target="_self">
+                                <?php if($this->options->langis == '0'): ?>
+                                    Continue Reading
+                                <?php elseif($this->options->langis == '1'): ?>
+                                    继续阅读
+                                <?php endif; ?>
+							</a>
+						</div>
 
                         <!-- Article info-->
                         <div>
