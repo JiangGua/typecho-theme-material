@@ -41,6 +41,7 @@
         <!-- User dropdown  -->
         <li class="dropdown">
             <ul id="settings-dropdown" class="dropdown-menu">
+				<!--
                 <li>
                     <a href="<?php $this->options->adminUrl(); ?>" tabindex="-1">
                         <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element" >account_circle</i>
@@ -61,6 +62,7 @@
                         <?php endif; ?>
                     </a>
                 </li>
+				-->
                 <?php if($this->user->hasLogin()): ?>
                     <li>
                         <a href="<?php $this->options->logoutUrl(); ?>" class="md-menu-list-a" tabindex="-1">
@@ -83,6 +85,7 @@
                             <?php endif; ?>
                         </a>
                     </li>
+					<!--
                     <li>
                         <a href="<?php $this->options->adminUrl('register.php'); ?>" class="md-menu-list-a" tabindex="-1">
                             <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element" >person_add</i>
@@ -93,6 +96,7 @@
                             <?php endif; ?>
                         </a>
                     </li>
+					-->
                 <?php endif; ?>
             </ul>
         </li>
@@ -116,7 +120,7 @@
                 <?php if($this->options->langis == '0'): ?>
                     I'm Feeling Lucky
                 <?php elseif($this->options->langis == '1'): ?>
-                    手气不错
+                    随机文章
                 <?php endif; ?>
             </a>
         </li>
@@ -325,6 +329,7 @@
                 <span class="sidebar-badge"><?php echo $stat->publishedPostsNum;?></span>
             </a>
         </li>
+		<!--
         <li>
             <a href="https://github.com/viosey/typecho-theme-material" target="_blank">
                 <?php if($this->options->langis == '0'): ?>
@@ -335,11 +340,13 @@
                 <span class="sidebar-badge badge-circle">i</span>
             </a>
         </li>
+		-->
     </ul>
     <!-- Sidebar divider -->
      <div class="sidebar-divider"></div>
 
     <!-- Sidebar bottom text -->
+	<!--
     <a href="mailto:viosey@outlook.com" class="sidebar-footer-text-a">
         <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div">
         <?php if($this->options->langis == '0'): ?>
@@ -367,6 +374,7 @@
             <?php endif; ?>
         </div>
     </a>
+	-->
 
     <?php if ( !empty($this->options->switch) && in_array('ShowUpyun', $this->options->switch) ) : ?>
         <div id="upyun-logo">
