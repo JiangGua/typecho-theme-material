@@ -1,6 +1,4 @@
-html{
-	height: 100%
-}body{
+body{
 	margin: 0;padding: 0;top: 0;right: 0;bottom: 0;left: 0;z-index: -1;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;background-attachment: fixed;content: '';will-change: transform
 }@mediascreenand(min-device-width: 1024px){
 	: : -webkit-scrollbar-track{
@@ -21,14 +19,22 @@ html{
 	}
 }a{
 	font-weight: 300
-}li{
-	list-style: none
+}ulli{
+	list-style-type: circle
+}olli{
+	list-style-type: decimal
 }hr{
 	margin: 2.4em30px2.4em30px;border: 1pxsolid#e9e9e6;border-width: 2px000
 }pre{
-	font-size: 1pc;margin: 1pcauto;word-break: break-all;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;max-width: 50pc
+	font-size: 1pc;margin: 1pcauto;word-break: break-all;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;max-width: 50pc;border: 0solidrgba(102,
+	128,
+	153,
+	0.075);border-left: 2pxsolidrgba(102,
+	128,
+	153,
+	0.75);border-radius: 0;padding: 10px;background: #23241f;color: #FFF;width: 884px;width: 100%;margin-left: -16px
 }blockquote{
-	word-break: break-all;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;font-size: 14px
+	word-break: break-all;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;font-size: 14px;line-height: 0;padding: 01em;color: #777;border-left: .25emsolid#ddd
 }#article-content-divh1,
 #article-content-divh2,
 #article-content-divh3,
@@ -98,7 +104,7 @@ html{
 	display: flex;min-height: 460px;flex-direction: column;align-items: stretch
 }@mediascreenand(max-width: 480px){
 	.demo-blog.mdl-card{
-		min-height: 240px
+		min-height: 400px
 	}
 }.demo-blog.mdl-card__title{
 	padding: 1pc;flex-grow: 1
@@ -687,27 +693,27 @@ html{
 		-webkit-transform: rotate(-45deg);transform: rotate(-45deg);margin: 3%37%;width: 75%
 	}
 }@-webkit-keyframesMD-burger-icon-line{
-	0%{
+	0{
 		-webkit-transform: rotate(-180deg);transform: rotate(-180deg)
 	}
 }@keyframesMD-burger-icon-line{
-	0%{
+	0{
 		-webkit-transform: rotate(-180deg);transform: rotate(-180deg)
 	}
 }@-webkit-keyframesMD-burger-icon-before-line{
-	0%{
+	0{
 		-webkit-transform: rotate(45deg);transform: rotate(45deg);margin: 3%37%;width: 75%
 	}
 }@keyframesMD-burger-icon-before-line{
-	0%{
+	0{
 		-webkit-transform: rotate(45deg);transform: rotate(45deg);margin: 3%37%;width: 75%
 	}
 }@-webkit-keyframesMD-burger-icon-after-line{
-	0%{
+	0{
 		-webkit-transform: rotate(-45deg);transform: rotate(-45deg);margin: 3%37%;width: 75%
 	}
 }@keyframesMD-burger-icon-after-line{
-	0%{
+	0{
 		-webkit-transform: rotate(-45deg);transform: rotate(-45deg);margin: 3%37%;width: 75%
 	}
 }@font-face{
@@ -741,7 +747,7 @@ html{
 	0,
 	0,
 	0.12),
-	0px8px8px0rgba(0,
+	08px8px0rgba(0,
 	0,
 	0,
 	0.24)
@@ -750,7 +756,7 @@ html{
 	0,
 	0,
 	0.12),
-	0px14px14px0rgba(0,
+	014px14px0rgba(0,
 	0,
 	0,
 	0.24)
@@ -848,7 +854,7 @@ html{
 	-webkit-animation-name: status-add;animation-name: status-add;-webkit-animation-duration: .5s;animation-duration: .5s;-webkit-animation-fill-mode: forwards;animation-fill-mode: forwards
 }@keyframesstatus-x{
 	from{
-		transform: rotate(0deg)
+		transform: rotate(0)
 	}to{
 		transform: rotate(225deg)
 	}
@@ -856,16 +862,16 @@ html{
 	from{
 		transform: rotate(225deg)
 	}to{
-		transform: rotate(0deg)
+		transform: rotate(0)
 	}
 }@keyframeszoomIn{
-	0%{
+	0{
 		-moz-transform: scale(0);-ms-transform: scale(0);-webkit-transform: scale(0);transform: scale(0);opacity: .0
 	}100%{
 		-moz-transform: scale(1);-ms-transform: scale(1);-webkit-transform: scale(1);transform: scale(1);opacity: 1
 	}
 }@keyframesload{
-	0%{
+	0{
 		-moz-transform: scale(0);-ms-transform: scale(0);-webkit-transform: scale(0);transform: scale(0);opacity: .0
 	}50%{
 		-moz-transform: scale(1.5);-ms-transform: scale(1.5);-webkit-transform: scale(1.5);transform: scale(1.5);opacity: 1
@@ -911,9 +917,9 @@ html{
 	background: #29d;position: fixed;z-index: 1031;top: 0;left: 0;width: 100%;height: 2px
 }#nprogress.peg{
 	display: block;position: absolute;right: 0;width: 100px;height: 100%;box-shadow: 0010px#29d,
-	005px#29d;opacity: 1.0;-webkit-transform: rotate(3deg)translate(0px,
-	-4px);-ms-transform: rotate(3deg)translate(0px,
-	-4px);transform: rotate(3deg)translate(0px,
+	005px#29d;opacity: 1.0;-webkit-transform: rotate(3deg)translate(0,
+	-4px);-ms-transform: rotate(3deg)translate(0,
+	-4px);transform: rotate(3deg)translate(0,
 	-4px)
 }#nprogress.spinner{
 	display: block;position: fixed;z-index: 1031;top: 15px;right: 15px
@@ -925,14 +931,14 @@ html{
 .nprogress-custom-parent#nprogress.bar{
 	position: absolute
 }@-webkit-keyframesnprogress-spinner{
-	0%{
-		-webkit-transform: rotate(0deg)
+	0{
+		-webkit-transform: rotate(0)
 	}100%{
 		-webkit-transform: rotate(360deg)
 	}
 }@keyframesnprogress-spinner{
-	0%{
-		transform: rotate(0deg)
+	0{
+		transform: rotate(0)
 	}100%{
 		transform: rotate(360deg)
 	}
@@ -988,14 +994,14 @@ CSS: MITLicense)*/@font-face{
 }.fa-pulse{
 	-webkit-animation: fa-spin1sinfinitesteps(8);animation: fa-spin1sinfinitesteps(8)
 }@-webkit-keyframesfa-spin{
-	0%{
-		-webkit-transform: rotate(0deg);transform: rotate(0deg)
+	0{
+		-webkit-transform: rotate(0);transform: rotate(0)
 	}100%{
 		-webkit-transform: rotate(359deg);transform: rotate(359deg)
 	}
 }@keyframesfa-spin{
-	0%{
-		-webkit-transform: rotate(0deg);transform: rotate(0deg)
+	0{
+		-webkit-transform: rotate(0);transform: rotate(0)
 	}100%{
 		-webkit-transform: rotate(359deg);transform: rotate(359deg)
 	}
