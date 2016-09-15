@@ -220,18 +220,18 @@ $this->need('header.php');?>
                                 <div class="mdl-color-text--grey-600 mdl-card__supporting-text index-article-content">
                                     <!--  $this->content('Continue Reading...');  -->
                                     <?php $this->excerpt(80, '...'); ?> &nbsp;&nbsp;&nbsp;
-                                    <span>
-                                <a href="<?php $this->permalink(); ?>" target="_self">
-                                    <?php if($this->options->langis == '0'): ?>
-                                        Continue Reading
-                                    <?php elseif($this->options->langis == '1'): ?>
-                                        继续阅读
-                                    <?php elseif($this->options->langis == '2'): ?>
-                                        繼續閱讀
-                                    <?php endif; ?>
-                                </a>
-                            </span>
                                 </div>
+								<div class="mdl-card__actions mdl-card--border">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="<?php $this->permalink(); ?>" target="_self">
+										<?php if($this->options->langis == '0'): ?>
+											Continue Reading
+										<?php elseif($this->options->langis == '1'): ?>
+											继续阅读
+										<?php elseif($this->options->langis == '2'): ?>
+											繼續閱讀
+										<?php endif; ?>
+									</a>
+								</div>
 
                                 <!-- Article info-->
                                 <div id="article-info">
