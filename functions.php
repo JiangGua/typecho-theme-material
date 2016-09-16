@@ -130,7 +130,7 @@ function themeConfig($form) {
             color: #FFF;
         }
         .typecho-page-main .typecho-option textarea{
-            height:101px;
+            height:126px;
         }
         .typecho-option label.typecho-label{
             font-weight: 500;
@@ -415,6 +415,7 @@ function themeConfig($form) {
             'ShowLoadingLine' => _t('顶部 loading 加载进度条效果'),
             'PJAX' => _t('使用 pjax'),
             'atargetblank' => _t('链接以新标签页形式打开'),
+			'multiusers' => _t('多用户博客(侧边栏显示“用户注册”)'),
         ),
 
         //Default choose

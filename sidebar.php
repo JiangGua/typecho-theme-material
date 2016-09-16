@@ -74,25 +74,28 @@
                         </a>
                     </li>
                     <?php else: ?>
-                    <li>
-                        <a href="<?php $this->options->loginUrl(); ?>" class="md-menu-list-a" tabindex="-1">
-                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">fingerprint</i>
-                            <?php if($this->options->langis == '0'): ?> Login
-                            <?php elseif($this->options->langis == '1'): ?> 用户登录
-                            <?php elseif($this->options->langis == '2'): ?> 使用者登錄
-                            <?php endif; ?>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php $this->options->adminUrl('register.php'); ?>" class="md-menu-list-a" tabindex="-1">
-                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">person_add</i>
-                            <?php if($this->options->langis == '0'): ?> Register
-                            <?php elseif($this->options->langis == '1'): ?> 用户注册
-                            <?php elseif($this->options->langis == '2'): ?> 使用者註冊
-                            <?php endif; ?>
-                        </a>
-                    </li>
+					<li>
+						<a href="<?php $this->options->loginUrl(); ?>" class="md-menu-list-a" tabindex="-1">
+							<i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">fingerprint</i>
+							<?php if($this->options->langis == '0'): ?> Login
+							<?php elseif($this->options->langis == '1'): ?> 用户登录
+							<?php elseif($this->options->langis == '2'): ?> 使用者登錄
+							<?php endif; ?>
+						</a>
+					</li>
+					<?php if ( !empty($this->options->switch) && in_array('multiusers', $this->options->switch) ) : ?>
+						<li>
+							<a href="<?php $this->options->adminUrl('register.php'); ?>" class="md-menu-list-a" tabindex="-1">
+								<i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">person_add</i>
+								<?php if($this->options->langis == '0'): ?> Register
+								<?php elseif($this->options->langis == '1'): ?> 用户注册
+								<?php elseif($this->options->langis == '2'): ?> 使用者註冊
+								<?php endif; ?>
+							</a>
+						</li>
+					<?php endif; ?>
                     <?php endif; ?>
+					
                 </ul>
             </li>
 
